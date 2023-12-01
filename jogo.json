@@ -1,1 +1,22 @@
-[{"id":"1","nome":"Jogo 1"},{"id":"2","nome":"Jogo 2"},{"id":"3","nome":"Jogo 3.1 "}]
+[
+    {
+        "id": "1",
+        "nome": "Resident Evil 2"
+    },
+    {
+        "id": "2",
+        "nome": "Resident Evil 4"
+    },
+    {
+        "id": "3",
+        "nome": "Devil May Cry"
+    },
+    {
+        "id": "4",
+        "nome": "Formula 1 2020"
+    },
+    {
+        "id": "5",
+        "nome": "Forza Horizon 5"
+    }
+]

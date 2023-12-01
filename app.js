@@ -1,7 +1,12 @@
 const express = require('express');
 //aqui estou chamando uma requisição express
 
+const cors = require('cors');
+// o cors é um  mecanismo de segurança que permite controlar as requisições dos navgadores. 
+
 const rotajogo = require('./rotas/jogo');
+
+const rotaFavorito = require('./rotas/favorito');
 
 const app = express();
 // aqui estou chamando uma aplicação express
@@ -10,6 +15,10 @@ const app = express();
 app.use(express.json());
 //este codigo é para receber body de arquivos tipo json 
 
+app.use(cors({origin: "*"}));
+
+// aqui estamos chamando o cors e usando o * para permitir o acesso de qualquer origem
+
 const port = 8000;
 // aqui esta sendo criado uma porta para o teste no localhost
 
@@ -17,6 +26,7 @@ const port = 8000;
 app.use('/jogos', rotajogo);
 // aqui estamos definindo o path de busca na url 
 
+app.use('/favoritos', rotaFavorito);
 
 
 app.listen(port, () =>{

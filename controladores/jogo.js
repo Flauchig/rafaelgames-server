@@ -19,8 +19,7 @@ function getjogos(req, res) {
 
 function getJogosId(req, res) {
     try {
-        const id = req.params.id;
-
+        const id = req.params.id;  
         if (!id || isNaN(id)) {
             res.status(422); // Define o status da resposta como erro de solicitação inválida
             res.send("ID inválido"); // Envia mensagem de erro para ID inválido
